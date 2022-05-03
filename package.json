@@ -1,0 +1,21 @@
+{
+  "name": "type-challenges-study",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YimJiYoung/type-challenges-study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YimJiYoung/type-challenges-study/issues"
+  },
+  "homepage": "https://github.com/YimJiYoung/type-challenges-study#readme",
+  "dependencies": {
+    "@type-challenges/utils": "^0.1.1"
+  }
+}
