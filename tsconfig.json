@@ -3,7 +3,8 @@
     "module": "esnext",
     "target": "es2017",
     "lib": [
-      "ESNext"
+      "ESNext",
+      "dom"
     ],
     "strict": true,
     "esModuleInterop": true,
@@ -11,6 +12,7 @@
     "skipLibCheck": true,
     "noUnusedLocals": false,
     "noUnusedParameters": true,
+    "noImplicitThis": true,
     "noImplicitReturns": true,
     "allowJs": true
   },
