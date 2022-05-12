@@ -3,7 +3,8 @@
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "airbnb-base",
-        "airbnb-typescript/base"
+        "airbnb-typescript/base",
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -20,8 +21,7 @@
                 "arrowParens": "avoid",
                 "endOfLine": "auto",
                 "printWidth": 120,
-                "singleQuote": true,
-                "trailingComma": "es5"
+                "singleQuote": true
             }
         ],
         "@typescript-eslint/no-unused-vars": "warn"
