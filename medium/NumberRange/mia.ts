@@ -9,6 +9,6 @@ type Sequence<N extends number, Seq extends number[], includeN extends boolean> 
 type ValuesOf<T extends any[]> = T[number];
 
 type NumberRange<L extends number, H extends number> = Exclude<
-ValuesOf<Sequence<H, [], true>>,
-ValuesOf<Sequence<L, [], false>>
+  ValuesOf<Sequence<H, [], true>>,
+  ValuesOf<Sequence<L, [], false>>
 >;
