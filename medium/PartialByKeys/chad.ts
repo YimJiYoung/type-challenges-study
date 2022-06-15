@@ -29,11 +29,21 @@
 
 type SetObject<T> = { [P in keyof T]: T[P] }
 
-type PartialByKeys<T, K extends keyof T > =  K extends undefined ? Partial<T> : SetObject<{
+//안들어오면 any?
+type PartialByKeys<T, K = keyof T > =  SetObject<{
   [P in keyof T as P extends K ? P:never]? : T[P]
 } & {
   [P in keyof T as P extends K ? never : P] : T[P]
 }> 
+
+
+// type SetObject<T> = { [P in keyof T]: T[P] }
+
+// type PartialByKeys<T, K extends keyof T > =  K extends undefined ? Partial<T> : SetObject<{
+//   [P in keyof T as P extends K ? P:never]? : T[P]
+// } & {
+//   [P in keyof T as P extends K ? never : P] : T[P]
+// }> 
 
 
 
