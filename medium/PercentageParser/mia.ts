@@ -1,5 +1,8 @@
 import type { Equal, Expect } from '@type-challenges/utils';
 
+// NOTE: typescript 4.7 버전에서 infer 타입에 extends 사용 가능
+// 참고 : https://devblogs.microsoft.com/typescript/announcing-typescript-4-7/#extends-constraints-on-infer-type-variables
+
 // type PercentageParser<PString extends string> = PString extends `${infer Sign extends '-' | '+'}${infer Rest}` ?
 //     Rest extends `${infer Num}%` ?
 //         [Sign, Num, '%'] : [Sign, Rest, '']
